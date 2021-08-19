@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <div class="modal">
-      <iframe src="../../public/sponsors/sponsors.html"></iframe>
+      <iframe src="./sponsors/sponsors.html"></iframe>
       <div style="padding:0px 30px; color: black;font-size: 12px; opacity: 0.5;">感谢以上赞助商对UCLCSSA学联的支持，使得本次临行会成为现实！</div>
       <div class="back" @click="$emit('hide')">关闭</div>
     </div>

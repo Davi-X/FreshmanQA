@@ -65,6 +65,7 @@ import Sponsor from "./Sponsor.vue";
 
 const moment = require("moment");
 const axios = require("axios");
+const afterDate = moment().subtract(12, 'month').format();
 
 export default {
   name: "QuestionOverview",
@@ -111,7 +112,7 @@ export default {
       console.log("fetching");
       const url =
         "https://uclcssa.cn/post/getPostEndpoint.php?auth=ucl&space=14&count=100&orderBy=created_at" +
-        (this.userid ? "&userid=" + this.userid : "");
+        (this.userid ? "&userid=" + this.userid : "") + ("&beforeDate=" + afterDate) ;
       fetch(url).then(async (res) => {
         let data = await res.json();
         console.log("fetched", data);

@@ -16,7 +16,7 @@
       />
     </div>
 
-    <img src="sponsors/sponsors.png" class="sponsor" @click="showSponsor=true" />
+    <img src="../../public/sponsors/sponsors.png" class="sponsor" @click="showSponsor=true" />
     <Sponsor v-if="showSponsor" @hide="showSponsor=false"></Sponsor>
 
     <div class="publish" style="padding:0">
